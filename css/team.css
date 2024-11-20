@@ -1,0 +1,39 @@
+.team{
+    padding-top: 180px;
+    gap:30px;
+    padding-bottom: 180px;
+}
+.one-team{
+    min-width: 300px;
+}
+.team-img-container img{
+    transition: all 0.5s;
+}
+.team-img-container:hover img{
+   opacity: 0.8;
+}
+@media(max-width:1000px){
+    .one-team{
+        min-width: 200px;
+    }
+    .one-team img{
+        width: 100%;
+        max-width: 220px;
+    }
+    .team{
+        padding-top: 100px;
+        gap:20px;
+        padding-bottom: 100px;
+    }
+}
+@media(max-width:570px){
+    .one-team{
+        min-width:170px;
+    }
+    .team{
+        gap:10px;
+    }
+    .header-text{
+        padding: 40px 50px;
+    }
+}

@@ -1,0 +1,117 @@
+.header{
+    background-image: url("../img/faqhead.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.every-questions{
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
+.related-questions{
+    margin-bottom: 180px;
+}
+.accordion-button .h3{
+    margin-bottom: 0;
+}
+.accordion-item{
+    border: 0;
+    border-bottom: 1px solid #CDA274 !important;
+    background: none;
+}
+.accordion-button{
+    background: none;
+}
+.accordion-button:focus,.accordion-button {
+    box-shadow: none !important;
+    outline: none;
+}
+.accordion-button.collapsed {
+    border: none;
+}
+.accordion-button:not(.collapsed) {
+    background: none;
+    color: #CDA274 !important;
+}
+.accordion-button:not(.collapsed) .h3{
+    color: #CDA274 !important;
+}
+.accordion-button::after {
+    transform: rotate(-90deg);
+}
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(0deg);
+}
+
+.question-img-container{
+    overflow: hidden;
+    border-radius: 40px;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.question-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.accordion{
+    width: 100%;
+    max-width: 585px;
+}
+.accordion-body{
+    padding-top: 0;
+    padding-bottom: 20px;
+    padding-left: 0;
+}
+.accordion-button{
+    padding-bottom: 32px;
+    padding-top: 20px;
+    padding-left: 0;
+}
+
+
+@media(max-width:1200px){
+    .question-img-container{
+        width: 70%;
+        height: 580px;
+    }
+}
+@media(max-width:1000px){
+    .accordion-button{
+        padding-bottom: 20px;
+        padding-right: 0;
+    }
+    .every-questions{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .accordion-body{
+        padding-right: 0;
+    }
+}
+@media(max-width:767px){
+    .every-question{
+        flex-direction: column !important;
+    }
+    .accordion-button{
+        padding-bottom: 20px;
+        padding-right: 20px;
+    }
+    .question-img-container{
+        width: 100%;
+        height: 400px;
+    }
+}
+@media(max-width:570px){
+    .accordion-button{
+        padding-left: 8px;
+    }
+    .accordion-body{
+        padding-left: 8px;
+    }
+    .question-img-container{
+        height: 300px;
+    }
+}

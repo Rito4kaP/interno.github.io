@@ -1,0 +1,103 @@
+h1,h2,h3,h4,h5,h6, .h3{
+    color: #292F36;
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 81.25px */
+}
+h1{font-size: 85px;}
+h2{font-size: 50px;}
+h3, .h3{font-size: 25px;}
+h5{font-size: 20px;}
+h4{font-size: 35px;}
+
+.central-h2{
+    text-align: center;
+    max-width: 570px;
+    margin: 0 auto;
+}
+.light-h2{color:#fff;}
+p, .p{
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 33px */
+    letter-spacing: 0.22px;
+}
+.central-p{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.light-p{color:#fff;
+font-weight: 300;}
+.sub-p{
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.18px;
+}
+.default-btn{
+    padding: 26px 0px;
+    padding-left: 4px;
+    margin-top: 24px;
+    gap: 10px;
+    border: 0;
+    border-radius: 18px;
+    background: #292F36;
+    box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+    color: #FFF;
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    width: 238px;
+}
+.default-btn:hover,.default-btn:active, .default-btn:focus{
+    background: #916b43;
+    border: 0;
+}
+.default-btn:hover svg{
+    margin-right: -4px;
+    transition: all 0.5s;
+}
+.default-btn-light{
+    background: #CDA274;
+    box-shadow: 0px 10px 20px 0px #1F2022;
+    transition: all 0.5s;
+}
+.default-btn-light:hover{
+    background: #b28554;
+    color: #FFF;
+}
+.default-btn-light:hover img{
+    margin-right: -4px;
+    transition: all 0.3s ease;
+}
+@media(max-width:1000px){
+    h3, .h3{font-size: 20px;}
+    .sub-p{
+        font-size: 16px;
+    }
+    h1{font-size: 50px;}
+    h2{font-size: 35px;}
+    p{font-size: 18px;}
+    .central-h2{font-size: 40px;
+    margin-bottom: 20px;}
+    h5{font-size: 18px;}
+}
+@media(max-width:580px){
+    p{font-size: 16px;}
+    h2{font-size: 30px;}
+    h1{font-size: 40px;}
+    h3{font-size: 16px;}
+    .default-btn{
+        width: 100%;
+    }
+    .central-h2{font-size: 30px;}
+}
